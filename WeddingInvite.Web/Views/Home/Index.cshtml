@@ -1,0 +1,390 @@
+﻿@model WeddingInvite.Web.Models.MailModels
+@{
+    ViewBag.Title = "Home";
+}
+
+@if (ViewBag.Visibility != null)
+{
+    <div id="modal-email" class="modal is-active">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <div class="box">
+                <div class="content has-text-centered">
+                    <h4><i class="fas fa-heart heart-pink"></i>&nbsp; Thank you for your email. We will get back to you soon! &nbsp;<i class="fas fa-heart heart-pink"></i></h4>
+                </div>
+            </div>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+}
+
+<section class="hero is-medium is-link has-bg-img">
+    <div class="hero-head">
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a class="navbar-item has-text-weight-semibold nav-bar-menu-bg-color" href="#">
+                        <p class="is-size-4">Andrea <i class="fas fa-heart heart-pink"></i> Freddie</p>
+                    </a>
+                    <span class="navbar-burger burger nav-bar-burger-color" data-target="navbarMenu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </div>
+                <div id="navbarMenu" class="navbar-menu nav-bar-menu-bg-color">
+                    <div class="navbar-end">
+                        <div class="tabs is-right">
+                            <ul>
+                                <li><a href="#Story">Our Story</a></li>
+                                <li><a href="#Details">Details</a></li>
+                                <li><a href="#Album">Wedding Album</a></li>
+                                <li><a href="#Registry">Registry</a></li>
+                                <li><a href="#Contact">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="hero-body">
+        <div class="container has-text-centered">
+            <h1 class="title">Welcome to Andrea and Freddie's wedding!</h1>
+            <h2 class="subtitle">27<sup>th</sup> July 2019 - Stockholm, Sweden</h2>
+            <a class="button is-large is-rounded is-link" href="#Contact">RSVP</a>
+        </div>
+    </div>
+</section>
+
+<div class="box cta">
+    <h1 id="countdown" class="subtitle has-text-centered"></h1>
+</div>
+
+<section id="Story" class="hero is-medium is-bold">
+    <div class="container">
+        <div class="columns features">
+            <div class="column is-6 margin-top-one-hundred">
+                <div class="card is-shady">
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-center">
+                                <img class="author-image" src="~/Content/images/andrea-fors.jpg" alt="Portrait of Andrea Fors">
+                            </div>
+                        </div>
+                        <div class="content article-body margin-top-one-hundred">
+                            <h2>Andrea Fors</h2>
+                            <p>
+                                As soon as Fred lay his eyes on Andrea he knew she was special. It only took her half an hour to prove it. Coming to his aid after a vertically challenged doorman took a disliking to him. He knew she was the one.<br><br>
+                                From that moment her dazzling smile and cheeky Nordic sense of humour have kept Fred out of trouble ever since.
+                            </p>
+                            <div class="buttons is-centered">
+                                <a class="button" href="mailto:andreafors_87&#64;hotmail.com" title="Email Andrea">
+                                    <span class="icon is-small">
+                                        <i class="far fa-envelope"></i>
+                                    </span>
+                                </a>
+                                <a class="button" href="https://www.instagram.com/horsepowergirl87/" title="Visit Andrea's Instagram">
+                                    <span class="icon">
+                                        <i class="fab fa-instagram"></i>
+                                    </span>
+                                </a>
+                                <a class="button" href="https://www.facebook.com/horsepowergirl87" title="Visit Andrea's Facebook">
+                                    <span class="icon">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-6 margin-top-one-hundred">
+                <div class="card is-shady">
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-center">
+                                <img class="author-image" src="~/Content/images/frederick-james.jpg" alt="Portrait of Frederick James">
+                            </div>
+                        </div>
+                        <div class="content article-body margin-top-one-hundred">
+                            <h2>Frederick James</h2>
+                            <p>
+                                Frederick with the many middle names (one of them being Kingdom after Isambard Brunel who basically designed the couples’ hometown Bristol) is a warm-hearted man with a wicked sense of humour.<br><br>
+                                His ability to make Andrea laugh and his rugged good looks are what made her fall head over heels in the first place.
+                            </p>
+                            <div class="buttons is-centered">
+                                <a class="button" href="mailto:fredjsam87&#64;live.co.uk" title="Email Fred">
+                                    <span class="icon is-small">
+                                        <i class="far fa-envelope"></i>
+                                    </span>
+                                </a>
+                                <a class="button" href="https://twitter.com/freddie2025" title="Visit Fred's Instagram">
+                                    <span class="icon">
+                                        <i class="fab fa-twitter"></i>
+                                    </span>
+                                </a>
+                                <a class="button" href="https://www.facebook.com/freddie2025" title="Visit Fred's Instagram">
+                                    <span class="icon">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="columns features">
+            <div class="column is-12 margin-top-neg-sixty">
+                <div class="card is-shady">
+                    <div class="card-content">
+                        <div class="content">
+                            <h2>Our Story</h2>
+                            <p class="is-size-6">
+                                January 26th is a big deal to any Australian. It marks the anniversary of the first British fleet to arrive at Port Jackson in New South Wales and is celebrated each year as Australia Day.
+                                For Andrea and Fred, despite not being even remotely Australian, this day is indeed a big deal. It was on the day of thong rafting and messy barbecues that they met in 2014.<br><br>
+                                It was in a noisy beer garden that they locked eyes for the first time. And it was definitely love at first sight. For the coming three weeks, these two lovebirds were inseparable. Until Fred had to leave Australia for home soil that is.
+                                However, the two had seen something in one another that they had never seen in anyone else and swore that they would stick together. And so they did.
+                                For the next 4 years, their relationship was all about trying to overcome immigration laws and other obstacles dead set on keeping them separated.
+                                In the end, love conquered all and they settled happily in Fred’s native England where they are currently planning their upcoming wedding.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="Details" class="hero is-danger is-large">
+    <div class="container">
+        <div class="columns features">
+            <div class="column is-12">
+                <div class="card is-shady">
+                    <div class="card-content">
+                        <div class="content is-size-6">
+                            <h2 class="title title-dark">Details</h2>
+                            <h3 class="subtitle title-dark">The wedding will take place, just outside of Stockholm, on the 27<sup>th</sup> July 2019</h3>
+                            <hr />
+                            <div class="columns is-desktop is-vcentered">
+                                <div class="column">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <img class="picture-border-light" src="~/Content/images/church.jpg" alt="Länna Kyrka Church" />
+                                        </div>
+                                        <footer class="card-footer">
+                                            <a class="card-footer-item" href="#map"><i class="fas fa-map-marked-alt"></i>&nbsp; Directions</a>
+                                        </footer>
+                                    </div>
+                                </div>
+                                <div class="column is-two-thirds">
+                                    <h3 class="title title-dark">Wedding Ceremony</h3>
+                                    <h4 class="subtitle title-dark">Länna Kyrka, Lännaby, Norrtälje, 761 93</h4>
+                                    <h5>The ceremony will begin at 12:30 and will last about an hour.</h5>
+                                    <p>
+                                        After the ceremony, we will serve cake, coffee and champagne in the vicar's cottage next to the church.
+                                        The bride and groom will leave the church around 16:00 to take wedding photos. We will meet up with our guests
+                                        at the reception at 18:00.
+                                    </p>
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="columns is-desktop is-vcentered">
+                                <div class="column">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <img class="picture-border-light" src="~/Content/images/hotell-havsbaden.jpg" alt="Hotell Havsbaden" />
+                                        </div>
+                                        <footer class="card-footer">
+                                            <a class="card-footer-item" href="https://www.hotellhavsbaden.se/"><i class="fas fa-home"></i>&nbsp; Book Online</a>
+                                            <a class="card-footer-item" href="tel:+4617530930"><i class="fas fa-phone"></i>&nbsp; +4617530930</a>
+                                        </footer>
+                                    </div>
+                                </div>
+                                <div class="column is-two-thirds">
+                                    <h3 class="title title-dark">Wedding Reception</h3>
+                                    <h4 class="subtitle title-dark">Hotell Havsbaden, Skatuddsvägen, Grisslehamn, 18, 764 56</h4>
+                                    <h5>Welcome drinks will be served at 18:00. Sit down dinner starts at 19:00.</h5>
+                                    <p>
+                                        If you would like to stay the night at Hotell Havsbaden, there are double rooms available from 1.800 SEK per night
+                                        and single rooms from 1.300 SEK per night.
+                                        Either give the hotel a call on +46 175 309 30 to book,
+                                        or let us know and we can help you.
+                                    </p>
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="columns is-desktop is-vcentered">
+                                <div class="column">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <img class="picture-border-light" src="~/Content/images/route-66-road.jpg" alt="Route 66" />
+                                        </div>
+                                        <footer class="card-footer">
+                                            <a class="card-footer-item" href="#Registry"><i class="fas fa-gifts"></i>&nbsp; Registry</a>
+                                        </footer>
+                                    </div>
+                                </div>
+                                <div class="column is-two-thirds">
+                                    <h3 class="title title-dark">Honeymoon</h3>
+                                    <h4 class="subtitle title-dark">Texas, US</h4>
+                                    <h5>We are currently planning our honeymoon for November 2019.</h5>
+                                    <p>
+                                        We have both dreamed of doing a road trip around the state of Texas in the U.S. and we will now make that dream come true.
+                                        If you would like to contribute to our honeymoon please visit our registry.
+                                    </p>
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="columns">
+                                <div class="column">
+                                    <h3>Dress Code For Her</h3>
+                                    <p>Cocktail attire - dress that finishes at or above the knee - high heels.</p>
+                                    <div class="columns">
+                                        <div class="column">
+                                            <img class="picture-border-dark" src="~/Content/images/girl1.jpg" alt="girl in red cocktail dress" />
+                                        </div>
+                                        <div class="column is-hidden-mobile">
+                                            <img class="picture-border-dark" src="~/Content/images/girl2.jpg" alt="girl in black jump suit" />
+                                        </div>
+                                        <div class="column is-hidden-mobile">
+                                            <img class="picture-border-dark" src="~/Content/images/girl3.jpg" alt="high heel" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <h3>Dress Code For Him</h3>
+                                    <p>Cocktail attire - suit jacket - smart trousers - tie optional.</p>
+                                    <div class="columns">
+                                        <div class="column">
+                                            <img class="picture-border-dark" src="~/Content/images/boy2.jpg" alt="man in suit" />
+                                        </div>
+                                        <div class="column is-hidden-mobile">
+                                            <img class="picture-border-dark" src="~/Content/images/boy3.jpg" alt="suit trousers" />
+                                        </div>
+                                        <div class="column is-hidden-mobile">
+                                            <img class="picture-border-dark" src="~/Content/images/boy1.jpg" alt="tie" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="Album" class="hero is-info is-large">
+    <div class="hero-body">
+        <div class="container">
+            <h1 class="title">Wedding Album</h1>
+            <h2 class="subtitle">Coming Soon</h2>
+        </div>
+    </div>
+</section>
+
+<section id="Registry" class="hero is-primary is-medium">
+    <div class="hero-body">
+        <div class="container">
+            <h1 class="title">Registry</h1>
+            <h2 class="subtitle">Your presence at our wedding is all that we wish for. However, if you want to give a gift, we will be grateful for a small cash donation towards our honeymoon.</h2>
+            <br>
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="8MV5QKYGWV2BY">
+                <input type="image" src="~/Content/images/paypal-donate.png" border="0" name="submit" alt="PayPal – The safer, easier way to pay online." height="30">
+                <img border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1" alt="PayPal logo">
+            </form>
+        </div>
+    </div>
+</section>
+
+<div id="map" class="map-size"></div>
+
+<section id="Directions" class="hero is-warning">
+    <div class="hero-body">
+        <div class="container">
+            <h1 class="title">Directions</h1>
+            <h2>
+                The quickest and easiest way to get into Stockholm from Arlanda is via the Arlanda Express. However, this is expensive, pre-booked it will cost 195 SEK pp.
+                If you are from out of town and feeling brave I recommend catching a bus from Arlanda to one of the commuter stations surrounding the airport. You'll need a travel card but this journey will only cost you 30 SEK.
+            </h2>
+            <br />
+            <div class="columns">
+                <div class="column">
+                    <a href="https://www.google.co.uk/maps/place/195+40+Märsta,+Sweden/"><i class="fas fa-map-marker-alt map-marker-red"></i>&nbsp; Märsta Station</a><br />
+                    <a href="https://www.google.co.uk/maps/place/Centralplan+15,+111+20+Stockholm,+Sweden/"><i class="fas fa-map-marker-alt map-marker-red"></i>&nbsp; Stockholm Central</a><br />
+                    <a href="https://www.google.co.uk/maps/place/Lännaby,+761+93+Norrtälje,+Sweden/"><i class="fas fa-map-marker-alt map-marker-red"></i>&nbsp; Länna Kyrka</a><br />
+                    <a href="https://www.google.co.uk/maps/place/Skatuddsvägen+18,+764+56+Grisslehamn,+Sweden/"><i class="fas fa-map-marker-alt map-marker-red"></i>&nbsp; Hotell Havsbaden</a><br />
+                    <a href="https://www.google.co.uk/maps/place/Arlanda+Södra+station/&#64;59.6461718,17.9261621,17z/"><i class="fas fa-map-marker-alt map-marker-red"></i>&nbsp; Stockholm Arlanda</a><br />
+                </div>
+                <div class="column">
+                    <a href="https://www.arlandaexpress.com/"><i class="fas fa-link"></i>&nbsp; Arlanda Express</a><br />
+                    <a href="https://sl.se/en/"><i class="fas fa-link"></i>&nbsp; Stockholm Public Transport</a><br />
+                    <a href="https://sl.se/en/fares--tickets/"><i class="fas fa-link"></i>&nbsp; Travel Cards</a><br />
+                    <a href="https://www.taxistockholm.se/en/"><i class="fas fa-link"></i>&nbsp; Pre-Booked Taxis</a><br />
+                    <a href="https://www.visitstockholm.com/"><i class="fas fa-link"></i>&nbsp; Visit Stockholm</a>
+                </div>
+            </div>
+            <h2>
+                On the day of the wedding, a number of us will be driving to the church from Stockholm. This will take roughly an hour (70km) and then another hour drive (60km) from the church to the spa. If anybody needs help with transport or car hire please just let us know.
+            </h2>
+        </div>
+    </div>
+</section>
+
+<section id="Contact" class="hero section">
+    <div class="hero-body">
+        <div class="container has-text-centered">
+            <h1 class="title">Contact / RSVP</h1>
+
+            @using (Html.BeginForm("Index", "Home", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @id = "contact-form", role = "form" }))
+            {
+                <form>
+                    <div class="field is-horizontal">
+                        <div class="field-body">
+                            <div class="field">
+                                <p class="control has-icons-left">
+                                    @Html.TextBoxFor(model => model.Name, new { @placeholder = "Name", @type = "text", @class = "input", aria_label = "Name" })
+                                    <span class="icon is-small is-left">
+                                        <i class="fas fa-user"></i>
+                                    </span>
+                                </p>
+                                <br>
+                            </div>
+                            <div class="field">
+                                <p class="control has-icons-left has-icons-right">
+                                    @Html.TextBoxFor(model => model.Email, new { @placeholder = "Email", @type = "text", @class = "input", aria_label = "Email" })
+                                    <span class="icon is-small is-left">
+                                        <i class="fas fa-envelope"></i>
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field is-horizontal">
+                        <div class="field-body">
+                            <div class="field">
+                                <div class="control">
+                                    @Html.TextAreaFor(model => model.Message, new { @placeholder = "Message", @class = "textarea text-area-min-height", aria_label = "Message" })
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field is-horizontal">
+                        <div class="field-body">
+                            <div class="field">
+                                <div class="control">
+                                    <input type="submit" value="Send" name="submit" class="button is-primary">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            }
+        </div>
+    </div>
+</section>

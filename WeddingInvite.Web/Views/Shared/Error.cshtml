@@ -1,0 +1,53 @@
+﻿@model System.Web.Mvc.HandleErrorInfo
+@{
+    Layout = "_Layout.cshtml";
+    ViewBag.Title = "Error";
+}
+
+<section class="hero">
+    <div class="hero-head">
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a class="navbar-item has-text-weight-semibold" href="#">
+                        <p class="is-size-4">Andrea <i class="fas fa-heart heart-pink"></i> Freddie</p>
+                    </a>
+                    <span class="navbar-burger burger" data-target="navbarMenu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </div>
+                <div id="navbarMenu" class="navbar-menu nav-bar-menu-bg-color">
+                    <div class="navbar-end">
+                        <div class="tabs is-right">
+                            <ul>
+                                <li><a href="#Story">Our Story</a></li>
+                                <li><a href="#Details">Details</a></li>
+                                <li><a href="#Album">Wedding Album</a></li>
+                                <li><a href="#Registry">Registry</a></li>
+                                <li><a href="#Contact">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</section>
+
+<section class="section is-medium">
+    <div class="container">
+        <div class="columns is-vcentered">
+            <div class="column">
+                <h1 class="title">Oh nej! Something Broke...</h1>
+                <p class="subtitle">Have no fear Freddie Beers is here. I'll try and fix this, in the mean time get on out of here.</p>
+                <a class="button">Home</a>
+                <a class="button">Contact</a>
+            </div>
+            <div class="column has-text-centered is-hidden-mobile">
+                <img src="https://www.eastfieldcollege.edu/PublishingImages/Pages/PageNotFoundError/404-robot.gif" />
+            </div>
+        </div>
+    </div>
+</section>

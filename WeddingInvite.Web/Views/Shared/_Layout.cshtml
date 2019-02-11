@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>@ViewBag.Title | Andrea and Freddie's Wedding e-invite</title>
+    <link type="text/plain" rel="author" href="~/humans.txt" />
+    <meta name="description" content="Welcome to our wedding e-invite. The wedding will take place, just outside of Stockholm, on the 27th July 2019" />
+
+    <meta property="og:url" content="https://frandreaswedding.azurewebsites.net/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Andrea and Freddie's Wedding e-invite" />
+    <meta property="og:description" content="Welcome to our wedding e-invite. The wedding will take place, just outside of Stockholm, on the 27th July 2019" />
+    <meta property="og:image" content="https://frandreaswedding.azurewebsites.net/" />
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="~/Content/images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="~/Content/images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="~/Content/images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="~/Content/images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="~/Content/images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="~/Content/images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="~/Content/images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="~/Content/images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="~/Content/images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="~/Content/images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="~/Content/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="~/Content/images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="~/Content/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="~/Content/images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="~/Content/images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    @Styles.Render("~/bundles/bulma", "~/bundles/css")
+    @Styles.RenderFormat("<link rel=\"stylesheet\" href=\"{0}\" integrity=\"sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/\" crossorigin=\"anonymous\"></link>", "~/bundles/font-awesome")
+    <noscript>Your browser does not support JavaScript!</noscript>
+</head>
+<body>
+    @RenderBody()
+
+    <footer class="footer">
+        <div class="container">
+            <div class="content has-text-centered">
+                <div class="control level-item">
+                    <a href="https://bulma.io">
+                        <img src="~/Content/Images/made-with-bulma.png" alt="Made with Bulma" width="128" height="24">
+                    </a>
+                </div>
+                <p class="is-size-7">Copyright &copy; @DateTime.Now.Year</p>
+                <div class="control level-item">
+                    <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-text="Wow what a rad website, go check it out:" data-related="freddie2025" data-show-count="true">Tweet</a>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+            </div>
+        </div>
+
+        @Scripts.Render("~/bundles/scripts")
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDruxpV9PK5qUee3dYChOthnq8VIp1sYrk&callback=initMap" async defer></script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131745746-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-131745746-1');
+        </script>
+    </footer>
+</body>
+</html>

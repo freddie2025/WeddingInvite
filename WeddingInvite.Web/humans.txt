@@ -1,0 +1,22 @@
+﻿/* TEAM */
+                      
+Web designer: Frederick James                                 
+Twitter: @freddie2025                  
+Location: Bristol, England.
+			
+/* THANKS */
+			
+Guys @ Font Awesome: https://fontawesome.com/
+Twitter: @fontawesome
+Location: Bentonville, Boston, Joplin, Seattle, and Vergennes.
+
+Bulma Creator: Jeremy Thomas
+Twitter: @jgthms
+Location: London, England.
+                  
+/* SITE */
+             
+Last update: 2019/02/11
+Language: English
+Tech Stack: HTML5, CSS3, C#, ASP.NET MVC 5, JavaScript                  
+IDE: Visual Studio 2017 Community Edition, Paint.NET
